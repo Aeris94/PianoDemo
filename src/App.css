@@ -1,0 +1,121 @@
+html
+{
+  height: 100%;
+}
+
+#app
+{
+  width: 100%; 
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#keyboard
+{
+  border-radius: 10px;
+  display: grid;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.key
+{
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+.whiteKey
+{
+  width: 60px;
+  background: white;
+  height: 180px;
+  border: 1px solid black;
+  box-shadow: 8px 6px 10px;
+  background-image: linear-gradient(to top, #f9f8f4, #c9c8bf, #8e8d86);
+}
+
+.blackKey
+{
+  color: white;
+  width: 30px;
+  justify-self: center;
+  background: black;
+  height: 120px;
+  z-index: 1;
+  box-shadow: 1px 2px 5px black;
+  background-image: linear-gradient(to top, #161616, black)
+}
+
+.setInput
+{
+  width: 18px;
+  border-radius: 2px;
+  text-align: center;
+}
+
+#optionPanel
+{
+  top:0;
+  left:0;
+  min-height: 50px;
+  position: fixed;
+  width: 100vw;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+select
+{
+  outline: none;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+#icons
+{
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.extraBox
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  position: absolute;
+  width: 60vw;
+  height: 70vh;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.exit
+{
+  position: absolute;
+  top: 5vh;
+  right: 5vh;
+}
+
+#tempSelection
+{
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
+}
